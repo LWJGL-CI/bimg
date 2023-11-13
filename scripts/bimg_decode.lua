@@ -64,7 +64,7 @@ project "bimg_decode"
 			"-std=c11",
 		}
 
-	configuration { "linux-*" }
+	configuration { "linux-* or freebsd" }
 		buildoptions {
 			"-fPIC",
 		}

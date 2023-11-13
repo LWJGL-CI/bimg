@@ -34,7 +34,7 @@ project "bimg"
 		"FloatFast", -- astc-encoder doesn't work with it.
 	}
 
-	configuration { "linux-*" }
+	configuration { "linux-* or freebsd" }
 		buildoptions {
 			"-fPIC",
 		}
