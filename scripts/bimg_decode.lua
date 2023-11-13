@@ -19,7 +19,7 @@ project "bimg_decode"
 
 	using_bx()
 
-	configuration { "linux-*" }
+	configuration { "linux-* or freebsd" }
 		buildoptions {
 			"-fPIC",
 		}
