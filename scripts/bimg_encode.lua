@@ -44,12 +44,12 @@ project "bimg_encode"
 		"FloatFast", -- astc-encoder doesn't work with it.
 	}
 
-	configuration { "linux-*" }
+	configuration { "linux-* or freebsd" }
 		buildoptions {
 			"-fPIC",
 		}
 
-	configuration { "mingw* or linux* or osx*" }
+	configuration { "mingw* or linux* or freebsd or osx*" }
 		buildoptions {
 			"-Wno-implicit-fallthrough",
 			"-Wno-shadow",
